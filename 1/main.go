@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	// Open the file or use os.Stdin for standard input
+	// Open the input text file
 	file, err := os.Open("input.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
@@ -17,10 +17,11 @@ func main() {
 	}
 	defer file.Close()
 
+	// Initialize the total sum of each line
+	total := 0
+
 	// Create a scanner to read from the file
 	scanner := bufio.NewScanner(file)
-
-	total := 0
 
 	// Iterate through each line
 	for scanner.Scan() {
