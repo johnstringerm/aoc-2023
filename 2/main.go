@@ -56,17 +56,14 @@ func main() {
 			switch colour {
 			case "red":
 				if quantity > redLimit {
-					fmt.Println(colour, quantity)
 					lineValid = false
 				}
 			case "green":
 				if quantity > greenLimit {
-					fmt.Println(colour, quantity)
 					lineValid = false
 				}
 			case "blue":
 				if quantity > blueLimit {
-					fmt.Println(colour, quantity)
 					lineValid = false
 				}
 			}
