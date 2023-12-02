@@ -36,7 +36,7 @@ func main() {
 		if err != nil {
 			fmt.Println("Error:", err)
 		} else {
-			total = total + combinedNum
+			total += combinedNum
 		}
 	}
 
